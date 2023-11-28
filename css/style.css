@@ -1,0 +1,104 @@
+/* Stili Generali */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    height: 100vh;
+}
+
+/* Stili Header */
+.topbar {
+    height: 130px;
+    display: flex;
+    padding: 20px;
+}
+
+.left-part {
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+img {
+    height: 100%;
+}
+
+.title {
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.right-part {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+button {
+    padding: 10px 30px;
+    background: darkcyan;
+    font-size: 20px;
+    cursor: pointer;
+    color: #ffff;
+}
+
+/* Stili Main */
+.mainpart {
+    height: calc(100vh - 210px);
+    background: #7fffd4;
+}
+
+#grid {
+    width: 600px;
+    margin: 0 auto;
+    height: 600px;
+}
+
+#grid .square {
+    float: left;
+    width: calc(100% / 10);
+    height: calc(100 / 10);
+    cursor: crosshair;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#grid, #grid .square {
+    border: 2px solid #ffff;
+}
+
+#grid .square.clicked {
+    background-color: #ffd166;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+/* Stili Footer */
+.bottombar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.credits {
+    font-size: 16px;
+}
+
